@@ -3,6 +3,7 @@
 #include "Inimigo.h"
 #include "ListaEntidades.h"
 #include <SFML/Graphics.hpp>
+using namespace Entidades;
 class Fase
 {
 public:

@@ -1,15 +1,11 @@
 #pragma once
 #include "Entidade.h"
 namespace Entidades {
-    class Jogador :
+    class Projetil :
         public Entidade
     {
-    private:
-
     public:
-        Jogador();
-        ~Jogador();
-
-        void move();
+        Projetil();
+        ~Projetil();
     };
 }

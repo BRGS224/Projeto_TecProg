@@ -1,7 +1,7 @@
 #include "Jogo.h"
 
 Jogo::Jogo():
-	window(sf::VideoMode(400, 400), "Jogo")
+	window(sf::VideoMode(2000,2000), "Jogo")
 {
     jogador1 = new Jogador();
     jogador1->setWindow(&window);

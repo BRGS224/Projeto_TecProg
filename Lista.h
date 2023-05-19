@@ -11,7 +11,7 @@ public:
 	~Lista();
 	int getLen() { return len; }
 	TL* getItem(int posicao) {
-		Elemento<TL> temp = pPrimeiro;
+		Elemento<TL>* temp = pPrimeiro;
 		if (posicao == 0)
 			return temp->getItem();
 		else {
@@ -23,7 +23,7 @@ public:
 	}
 	void push(TL* item) {
 		if (pPrimeiro == nullptr) {
-			pPrimeiro = new Elemento<TL>
+			pPrimeiro = new Elemento<TL>;
 			pPrimeiro->setItem(item);
 			pUltimo = pPrimeiro;
 		}
@@ -64,7 +64,7 @@ template<class TL>
 inline Lista<TL>::Lista()
 {
 	pPrimeiro = nullptr;
-	plUtimo = nullptr;
+	pUltimo = nullptr;
 	len = 0;
 }
 

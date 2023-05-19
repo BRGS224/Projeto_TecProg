@@ -1,13 +1,15 @@
 #pragma once
 #include "Entidade.h"
-class Inimigo :
-    public Entidade
-{
-private:
+namespace Entidades{
+    class Inimigo :
+        public Entidade
+    {
+    protected:
+        int nivel_maldade;
 
-public:
-    Inimigo();
-    ~Inimigo();
+    public:
+        Inimigo();
+        ~Inimigo();
 
-};
-
+    };
+}
